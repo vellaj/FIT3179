@@ -5,7 +5,7 @@
   "layer": [
     {
       "data": {
-        "url": "us-10m.json",
+        "url": "US.json",
         "format": {"type": "topojson", "feature": "states"}
       },
       "projection": {"type": "albersUsa"},
