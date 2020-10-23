@@ -22,9 +22,9 @@
         "size": {"value": 10},
         "color": {"value": "#fc0324"},
         "tooltip": [
-          {"field": "state", "type": "nominal", "format": ","},
-          {"field": "location", "type": "nominal", "format": ","},
-          {"field": "address", "type": "nominal", "format": ","}
+          {"field": "state", "type": "nominal"},
+          {"field": "location", "type": "nominal"},
+          {"field": "address", "type": "nominal"}
           ]
       }
     }
