@@ -2,6 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 500,
   "height": 300,
+  "title": "Chipotle Store Locations in the United States"
   "layer": [
     {
       "data": {
@@ -18,8 +19,7 @@
       "encoding": {
         "longitude": {"field": "longitude", "type": "quantitative"},
         "latitude": {"field": "latitude", "type": "quantitative"},
-        "size": {"value": 10},
-        "color": {"field": "state", "type": "nominal"}
+        "size": {"value": 10}
       }
     }
   ],
