@@ -20,7 +20,12 @@
         "longitude": {"field": "longitude", "type": "quantitative"},
         "latitude": {"field": "latitude", "type": "quantitative"},
         "size": {"value": 10},
-        "color": {"value": "#fc0324"}
+        "color": {"value": "#fc0324"},
+        "tooltip": [
+          {"field": "state", "type": "nominal", "format": ","},
+          {"field": "location", "type": "nominal", "format": ","},
+          {"field": "address", "type": "nominal", "format": ","}
+          ]
       }
     }
   ],
