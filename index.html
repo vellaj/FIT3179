@@ -13,7 +13,7 @@
 <h1>Chipotle In the US</h1>
 
 <h2>Store Locations</h2>
-<div id="#map"></div>
+<div id="map"></div>
 
 <h2>Population and Store Count</h2>
 <div id="scatter_plot"></div>
@@ -22,7 +22,7 @@
   
   var vis1 = "vis.vl.json";
   
-  vegaEmbed('map', vis1).then(function(result) {
+  vegaEmbed('#map', vis1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
