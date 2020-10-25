@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/vellaj/FIT3179/main/chippopage.csv"
+  },
+  "params": [
+    {
+      "name": "Population_Above",
+      "value": 0,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 40000000,
+        "step": 100000,
+        "name": "Minimum Population: "
+      }
+    }
+  ],
+  "transform": [{"filter": "datum.pop > Population_Above"}],
+  "selection": {
+    "medage_highlight": {
+      "type": "multi",
+      "fields": ["medage"],
+      "bind": "legend"
+    }
+  },
+  "mark": "circle",
+  "encoding": {
+    "x": {
+      "aggregate": "count",
+      "field": "state",
+      "type": "quantitative",
+      "axis": {"tickCount": 3},
+      "scale": {"type": "log", "domain": [1, 500]}
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "pop",
+      "type": "quantitative",
+      "axis": {"tickCount": 3},
+      "scale": {"type": "log", "domain": [100000, 40000000]}
+    },
+    "color": {"value": "#fc0324"},
+    "opacity": {
+      "condition": {"selection": "medage_highlight", "value": 0.8},
+      "value": 0.2
+    },
+    "size": {
+      "field": "medage",
+      "type": "quantitative",
+      "scale": {
+        "type": "threshold",
+        "domain": [30, 34, 38, 40],
+        "range": [10, 20, 100, 200, 400]
+      }
+    },
+    "detail": {"field": "state"},
+    "tooltip": [
+      {"field": "state", "type": "nominal"},
+      {"aggregate": "count", "type": "quantitative"},
+      {"field": "pop", "type": "quantitative"},
+      {"field": "medage", "type": "quantitative"}
+    ]
+  },
+  "config": {}
+}
