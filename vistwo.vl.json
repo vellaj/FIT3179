@@ -41,20 +41,9 @@
       "axis": {"tickCount": 3},
       "scale": {"type": "log", "domain": [100000, 40000000]}
     },
-    "color": {"value": "#fc0324"},
-    "opacity": {
-      "condition": {"selection": "medage_highlight", "value": 0.8},
-      "value": 0.2
+    "color": {"field":"medage", "type": "quantitative", "scale":{"scheme":"reds"}
     },
-    "size": {
-      "field": "medage",
-      "type": "quantitative",
-      "scale": {
-        "type": "threshold",
-        "domain": [30, 34, 38, 40],
-        "range": [10, 20, 100, 200, 400]
-      }
-    },
+    "size":{"value": 100},
     "detail": {"field": "state"},
     "tooltip": [
       {"field": "state", "type": "nominal"},
