@@ -34,6 +34,7 @@
       "field": "state",
       "type": "quantitative",
       "axis": {"tickCount": 3},
+      "title": "Number of Stores",
       "scale": {"type": "log", "domain": [1, 500]}
     },
     "y": {
@@ -41,9 +42,10 @@
       "field": "pop",
       "type": "quantitative",
       "axis": {"tickCount": 3},
+      "title": "State Population",
       "scale": {"type": "log", "domain": [100000, 40000000]}
     },
-    "color": {"field":"medage", "type": "quantitative", "scale":{"scheme":"reds"}
+    "color": {"field":"medage", "type": "quantitative", "scale":{"scheme":"reds"}, "title": "Median Age"
     },
     "size":{"value": 100},
     "detail": {"field": "state"},
