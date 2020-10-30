@@ -78,6 +78,7 @@
     },
     "y": {"aggregate": "count", "field": "latitude", "type": "ordinal"},
     "detail": {"field": "location"},
+    "color": {"value": "#d13b30"},
     "tooltip": [
       {"field": "state", "type": "nominal"},
       {"field": "location", "type": "nominal"},
