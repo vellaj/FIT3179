@@ -74,9 +74,10 @@
     "x": {
       "field": "location",
       "type": "nominal",
-      "axis": {"labelOverlap": true}
+      "axis": {"labelOverlap": true},
+      "title": "County"
     },
-    "y": {"aggregate": "count", "field": "latitude", "type": "ordinal"},
+    "y": {"aggregate": "count", "field": "latitude", "type": "ordinal", "title": "Number of Stores"},
     "detail": {"field": "location"},
     "color": {"value": "#d13b30"},
     "tooltip": [
