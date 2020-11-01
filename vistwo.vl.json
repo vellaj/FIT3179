@@ -51,10 +51,10 @@
     "size":{"value": 100},
     "detail": {"field": "state"},
     "tooltip": [
-      {"field": "state", "type": "nominal"},
-      {"aggregate": "count", "type": "quantitative"},
-      {"field": "pop", "type": "quantitative"},
-      {"field": "medage", "type": "quantitative"}
+      {"field": "state", "type": "nominal", "title": "State"},
+      {"aggregate": "count", "type": "quantitative","title": "Number of Stores"},
+      {"field": "pop", "type": "quantitative", "title": "Population"},
+      {"field": "medage", "type": "quantitative", "title": "Median Age"}
     ]
   },
   "config": {}
