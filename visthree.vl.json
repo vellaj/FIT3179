@@ -81,9 +81,9 @@
     "detail": {"field": "location"},
     "color": {"value": "#d13b30"},
     "tooltip": [
-      {"field": "state", "type": "nominal"},
-      {"field": "location", "type": "nominal"},
-      {"aggregate": "count", "type": "quantitative"}
+      {"field": "state", "type": "nominal", "title": "State"},
+      {"field": "location", "type": "nominal","title": "County"},
+      {"aggregate": "count", "type": "quantitative","title": "Number of Stores"}
     ]
   },
   "config": {}
