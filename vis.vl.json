@@ -23,9 +23,9 @@
         "size": {"value": 10},
         "color": {"value": "#fc0324"},
         "tooltip": [
-          {"field": "state", "type": "nominal"},
-          {"field": "location", "type": "nominal"},
-          {"field": "address", "type": "nominal"}
+          {"field": "state", "type": "nominal", "title": "State"},
+          {"field": "location", "type": "nominal", "title": "County"},
+          {"field": "address", "type": "nominal", "title": "Store Address"}
           ]
       }
     }
